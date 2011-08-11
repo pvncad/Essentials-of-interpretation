@@ -20,14 +20,14 @@
 * the semantics of our program and even doesn't touch
 * the exact grammar. All it does is just separates logical
 * syntactic *primitives* from which our grammar consists of.
-* These primitive parts are called "synonyms".
+* These primitive parts are called "tokens".
 *
 * Tokens are sequences of chars (or a single char). For example, we have
 * digit token "115" which consists of three chars "1", "1" and "5".
 *
 * So our task in this lesson is to separate tokens from the input stream.
 * For this we need an object which is called "tokenizer". Another names of
-* it are "lexer" or "scanner" (all three are ). So let's implement
+* it are "lexer" or "scanner" (all three are synonyms). So let's implement
 * it for our AE grammar.
 *
 */
