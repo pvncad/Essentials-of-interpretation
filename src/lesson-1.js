@@ -4,7 +4,7 @@
  *
  * Lesson 1. The simplest arithmetic expressions (AE) evaluator.
  *
- * We use BNF (Backus-Naur Form) grammar to represent our interpreter:
+ * We use BNF (Backus-Naur Form) grammar to represent our language:
  *
  * <AE> ::= <num>
  *        | ["+" <AE> <AE>]
@@ -54,7 +54,7 @@ function evaluate(exp) {
 /**
  * isNumber
  * @param {Expression} exp
- * Tests where an expression is a number
+ * Tests whether an expression is a number
  */
 function isNumber(exp) {
   return !isNaN(+exp);
@@ -63,7 +63,7 @@ function isNumber(exp) {
 /**
  * isAddition
  * @param {Expression} exp
- * Tests where an expression is a addition
+ * Tests whether an expression is a addition
  */
 function isAddition(exp) {
   return isTaggedList("+", exp);
@@ -72,7 +72,7 @@ function isAddition(exp) {
 /**
  * isSubtraction
  * @param {Expression} exp
- * Tests where an expression is a subtraction
+ * Tests whether an expression is a subtraction
  */
 function isSubtraction(exp) {
   return isTaggedList("-", exp);
@@ -156,7 +156,7 @@ result = evaluate(program);
 
 console.log("result:", result); // 10
 
-// Homework:
+// Exercises:
 //
 // 1. Implement multiplication and division
 //
