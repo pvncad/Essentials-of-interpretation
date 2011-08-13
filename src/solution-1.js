@@ -1,6 +1,5 @@
 /*
- * Essentials of interpretation.
- * by Dmitry A. Soshnikov <dmitry.soshnikov@gmail.com>
+ * pvncad's solutions to "Essentials of interpretation" by Dmitry A. Soshnikov
  *
  * Lesson 1. The simplest arithmetic expressions (AE) evaluator.
  *
@@ -33,7 +32,6 @@
 // E.g.:
 // var expressionType = getType(exp);
 // return this["evaluate" + expressionType](exp);
-
 
 /**
  * evaluate
